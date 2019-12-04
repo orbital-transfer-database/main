@@ -1,0 +1,1 @@
+requires pkg('meta/gtk3', feature => 'gobject-introspection');

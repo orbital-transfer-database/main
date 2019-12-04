@@ -1,0 +1,4 @@
+debian_apt 'libgirepository1.0-dev', phase => 'dev';
+debian_apt 'gobject-introspection', phase => 'run';
+macos_homebrew 'gobject-introspection', phase => 'dev|run';
+msys2_pacman 'gobject-introspection';

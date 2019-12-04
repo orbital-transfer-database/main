@@ -1,0 +1,5 @@
+debian_apt 'libgtk-3-dev', feature => 'development', phase => 'dev';
+debian_apt 'gir1.2-gtk-3.0', feature => 'gobject-introspection';
+macos_homebrew 'gtk+3', phase => 'dev|run';
+macos_homebrew 'gtk-mac-integration', phase => 'run';
+msys2_pacman 'gtk3';

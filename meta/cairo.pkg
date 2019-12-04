@@ -1,0 +1,3 @@
+debian_apt 'libcairo2';
+macos_homebrew 'cairo', phase => 'dev|run';
+msys2_pacman 'cairo';

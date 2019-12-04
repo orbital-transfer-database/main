@@ -1,0 +1,3 @@
+debian_apt 'meson';
+macos_homebrew 'meson';
+msys2_pacman 'meson';

@@ -1,0 +1,2 @@
+debian_apt 'libexpat1-dev', phase => 'dev';
+msys2_pacman 'expat';
