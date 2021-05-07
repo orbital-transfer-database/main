@@ -1,3 +1,5 @@
+use Orbitalfile -api => v1;
+
 debian_apt 'gir1.2-graphene-1.0';
 macos_homebrew 'graphene';
 msys2_pacman 'graphene';

@@ -1,3 +1,5 @@
+use Orbitalfile -api => v1;
+
 debian_apt 'libglib2.0-dev';
 macos_homebrew 'glib';
 msys2_pacman 'glib2';
