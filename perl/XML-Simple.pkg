@@ -1,3 +1,0 @@
-use Orbitalfile -api => v1;
-
-requires pkg('meta/libxml2') | pkg('meta/expat');
