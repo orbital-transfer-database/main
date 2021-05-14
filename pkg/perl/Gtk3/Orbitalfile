@@ -1,3 +1,6 @@
 use Orbitalfile -api => v1;
 
+# provides cpan dist => 'Gtk3';
+# provides cpan module => 'Gtk3';
+
 requires pkg('gui/gtk3', feature => 'gobject-introspection');

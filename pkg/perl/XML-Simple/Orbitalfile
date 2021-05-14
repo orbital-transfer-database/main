@@ -1,3 +1,6 @@
 use Orbitalfile -api => v1;
 
+# provides cpan dist => 'XML-Simple';
+# provides cpan module => 'XML::Simple';
+
 requires pkg('xml/libxml2') | pkg('xml/expat');
