@@ -1,4 +1,4 @@
-use Orbitalfile -api => v1;
+use Orbital -api => v1;
 
 debian_apt 'libglib2.0-dev';
 macos_homebrew 'glib';

@@ -1,4 +1,4 @@
-use Orbitalfile -api => v1;
+use Orbital -api => v1;
 
 debian_apt 'libgtk-3-dev', feature => 'development', phase => 'dev';
 debian_apt 'gir1.2-gtk-3.0', feature => 'gobject-introspection';

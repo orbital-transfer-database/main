@@ -1,4 +1,4 @@
-use Orbitalfile -api => v1;
+use Orbital -api => v1;
 
 # provides cpan dist => 'Gtk3';
 # provides cpan module => 'Gtk3';

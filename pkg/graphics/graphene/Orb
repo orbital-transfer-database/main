@@ -1,4 +1,4 @@
-use Orbitalfile -api => v1;
+use Orbital -api => v1;
 
 debian_apt 'gir1.2-graphene-1.0';
 macos_homebrew 'graphene';
