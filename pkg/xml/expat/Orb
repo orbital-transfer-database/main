@@ -1,4 +1,6 @@
-use Orbital -api => v1;
+use Orbital -type => 'define', -version => 'v0';
 
-debian_apt 'libexpat1-dev', phase => 'dev';
-msys2_pacman 'expat';
+define 'package', sub {
+	metadata debian_apt => { name => 'libexpat1-dev', phase => 'dev' };
+	metadata msys2_pacman => { name => 'expat' };
+};

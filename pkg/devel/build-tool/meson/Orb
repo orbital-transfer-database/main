@@ -1,5 +1,7 @@
-use Orbital -api => v1;
+use Orbital -type => 'define', -version => 'v0';
 
-debian_apt 'meson';
-macos_homebrew 'meson';
-msys2_pacman 'meson';
+define 'package', sub {
+	metadata debian_apt => { name => 'meson' };
+	metadata macos_homebrew => { name => 'meson' };
+	metadata msys2_pacman => { name => 'meson' };
+};

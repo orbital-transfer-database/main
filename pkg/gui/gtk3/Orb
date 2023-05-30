@@ -1,7 +1,9 @@
-use Orbital -api => v1;
+use Orbital -type => 'define', -version => 'v0';
 
-debian_apt 'libgtk-3-dev', feature => 'development', phase => 'dev';
-debian_apt 'gir1.2-gtk-3.0', feature => 'gobject-introspection';
-macos_homebrew 'gtk+3', phase => 'dev|run';
-macos_homebrew 'gtk-mac-integration', phase => 'run';
-msys2_pacman 'gtk3';
+define 'package', sub {
+	metadata debian_apt => { name => 'libgtk-3-dev', feature => 'development', phase => 'dev' };
+	metadata debian_apt => { name => 'gir1.2-gtk-3.0', feature => 'gobject-introspection' };
+	metadata macos_homebrew => { name => 'gtk+3', phase => 'dev|run'};
+	metadata macos_homebrew => { name => 'gtk-mac-integration', phase => 'run' };
+	metadata msys2_pacman => { name => 'gtk3' };
+};

@@ -1,5 +1,7 @@
-use Orbital -api => v1;
+use Orbital -type => 'define', -version => 'v0';
 
-debian_apt 'libglib2.0-dev';
-macos_homebrew 'glib';
-msys2_pacman 'glib2';
+define 'package', sub {
+	metadata debian_apt => { name => 'libglib2.0-dev' };
+	metadata macos_homebrew => { name => 'glib' };
+	metadata msys2_pacman => { name => 'glib2' };
+};

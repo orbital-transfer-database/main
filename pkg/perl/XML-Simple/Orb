@@ -1,6 +1,7 @@
-use Orbital -api => v1;
+use Orbital -type => 'define', -version => 'v0';
 
-# provides cpan dist => 'XML-Simple';
-# provides cpan module => 'XML::Simple';
-
-requires pkg('xml/libxml2') | pkg('xml/expat');
+define 'package/perl', sub {
+	metadata 'cpan/dist' => 'XML-Simple';
+	metadata 'cpan/module' => 'XML::Simple';
+	#requires pkg('xml/libxml2') | pkg('xml/expat');
+};

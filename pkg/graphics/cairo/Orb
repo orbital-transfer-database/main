@@ -1,5 +1,7 @@
-use Orbital -api => v1;
+use Orbital -type => 'define', -version => 'v0';
 
-debian_apt 'libcairo2';
-macos_homebrew 'cairo', phase => 'dev|run';
-msys2_pacman 'cairo';
+define 'package', sub {
+	metadata debian_apt => { name => 'libcairo2' };
+	metadata macos_homebrew => { name => 'cairo', phase => 'dev|run' };
+	metadata msys2_pacman => { name => 'cairo' };
+};

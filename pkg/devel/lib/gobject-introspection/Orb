@@ -1,6 +1,8 @@
-use Orbital -api => v1;
+use Orbital -type => 'define', -version => 'v0';
 
-debian_apt 'libgirepository1.0-dev', phase => 'dev';
-debian_apt 'gobject-introspection', phase => 'run';
-macos_homebrew 'gobject-introspection', phase => 'dev|run';
-msys2_pacman 'gobject-introspection';
+define 'package', sub {
+	metadata debian_apt => { name => 'libgirepository1.0-dev', phase => 'dev' };
+	metadata debian_apt => { name => 'gobject-introspection', phase => 'run' };
+	metadata macos_homebrew => { name => 'gobject-introspection', phase => 'dev|run' };
+	metadata msys2_pacman => { name => 'gobject-introspection' };
+};
